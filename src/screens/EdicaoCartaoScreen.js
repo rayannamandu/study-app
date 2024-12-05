@@ -55,7 +55,7 @@ const EdicaoCartaoScreen = ({ route, navigation }) => {
                 <MaterialIcons name="date-range" size={20} color="#ffffff" />
                 <Text style={styles.buttonText}>Escolher Data</Text>
             </TouchableOpacity>
-            <DateTimePickerModal isVisible={mostraDataPicker} mode="datetime" onConfirm={confirmarData} onCancel={ocultarDataPicker} />
+            <DateTimePickerModal isVisible={mostraDataPicker} mode="datetime" onConfirm={confirmarData} onCancel={ocultarDataPicker} themeVariant="light" />
             <Text style={styles.selectedDateLabel}>Data selecionada: {dataTermino.toLocaleDateString()}</Text>
 
             <Text style={styles.label}>Status:</Text>
